@@ -7,6 +7,7 @@ import {
   CardSubtitle,
   Button
 } from 'reactstrap'
+import UpdateTodo from './UpdateTodo'
 
 class TodoCard extends Component {
   constructor() {
@@ -31,6 +32,9 @@ class TodoCard extends Component {
               <CardText className="task">{todo.task}</CardText>
               <CardText className="dueDate">{todo.dueDate}</CardText>
             </CardBody>
+            <UpdateTodo
+              todo={todo}
+             />
           </Card>
         ))}
       </div>
